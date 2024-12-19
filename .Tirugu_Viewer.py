@@ -11,6 +11,7 @@ class TiruguViewer(tk.Tk):
         super().__init__()
         self.title("Tirugu - 360 Product Image Viewer")
         self.geometry("1920x1080")
+        self.iconphoto(False, ImageTk.PhotoImage(file='Tirugu.jpg'))
         
         # Bind the configure event to resize the image when the window is resized
         self.bind("<Configure>", self.on_window_resize)
